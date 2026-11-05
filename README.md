@@ -43,9 +43,14 @@ botones apuntan a las rutas definitivas de `downloads/`.
 
 ## GitHub Pages
 
-El sitio se publica desde la rama `main`, carpeta raíz:
+El sitio se publica desde la rama `gh-pages`. El workflow
+`.github/workflows/deploy.yml` copia el contenido de `main` a `gh-pages` en
+cada push, así que **`main` es la única rama que hay que editar**.
 
-**Settings → Pages → Build and deployment → Deploy from a branch → `main` → `/ (root)`**
+La primera publicación se hizo creando la rama `gh-pages`; GitHub Pages la
+detectó y activó automáticamente. Si alguna vez hay que revisar la
+configuración: **Settings → Pages → Build and deployment → Deploy from a
+branch → `gh-pages` → `/ (root)`**.
 
 ## Licencia
 
