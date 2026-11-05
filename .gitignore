@@ -1,0 +1,5 @@
+# Binarios de descarga
+# Se subirán solo cuando se pida expresamente.
+downloads/*.apk
+downloads/*.ipa
+downloads/*.zip

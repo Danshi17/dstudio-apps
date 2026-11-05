@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dStudios Apps — TuxMusic para Android e iOS</title>
+<meta name="description" content="Descarga TuxMusic, la app de música de dStudios para Android e iOS: catálogo de Apple Music y Spotify, playlists, descargas sin conexión y reproducción en segundo plano.">
+<meta property="og:title" content="dStudios Apps — TuxMusic para Android e iOS">
+<meta property="og:description" content="Descarga TuxMusic para Android e iOS. Música, playlists y descargas sin conexión en una sola app.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danshi17.github.io/dstudio-apps/">
+<meta property="og:image" content="https://danshi17.github.io/dstudio-apps/assets/apps/tuxmusic-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<script>try{var t=localStorage.getItem("ds-theme");if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/apps.css">
+</head>
+<body class="page-apps">
+<div id="pageSkeleton" aria-hidden="true"><div class="sk-wrap"><div class="sk-top"><span class="sk-blk sk-logo"></span><span class="sk-blk sk-nav"></span></div><div class="sk-hero"><div class="sk-lines"><span class="sk-blk sk-line"></span><span class="sk-blk sk-line"></span><span class="sk-blk sk-line"></span></div><div class="sk-tiles"><span class="sk-blk sk-tile"></span><span class="sk-blk sk-tile"></span><span class="sk-blk sk-tile"></span><span class="sk-blk sk-tile"></span></div></div></div></div>
+<noscript><style>#pageSkeleton{display:none}</style></noscript>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html">
+      <img class="logo-img" src="assets/logo.png" alt="" width="36" height="36">
+      <span class="logo-text">dStudios<span class="logo-sub">Apps</span></span>
+    </a>
+    <nav class="nav">
+      <a class="nav-link active" href="index.html">Inicio</a>
+      <a class="nav-link" href="#descargas">Descargas</a>
+      <a class="nav-link nav-hide-sm" href="#funciones">Funciones</a>
+      <a class="nav-link" href="#instalar">Instalar</a>
+      <a class="nav-link nav-plugins" href="https://danshi17.github.io/" title="Ir a la página de plugins de dStudios">Plugins <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      <a class="nav-link nav-github" href="https://github.com/Danshi17" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg> GitHub</a>
+      <button class="icon-btn theme-btn" id="themeToggle" title="Cambiar tema" aria-label="Cambiar tema">
+        <span class="theme-dark"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+        <span class="theme-light"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero apps-hero">
+  <div class="wrap">
+    <div class="hero-card">
+      <div class="hero-left">
+        <p class="hero-kicker">App oficial de dStudios</p>
+        <h1>TuxMusic, tu música <span class="hl">sin límites</span>.</h1>
+        <div class="section-lines" aria-hidden="true"><i style="width:64px;background:#18f572"></i><i style="width:46px;background:#14dd67"></i><i style="width:38px;background:#10c75b"></i><i style="width:30px;background:#0db150"></i><i style="width:24px;background:#0a9b4a"></i><i style="width:18px;background:#088541"></i><i style="width:12px;background:#066f37"></i></div>
+        <p class="hero-sub">Busca en Apple Music y Spotify, importa tus playlists, descarga canciones para escucharlas sin conexión y sigue reproduciendo con la pantalla apagada. Todo en una app nativa para Android e iOS.</p>
+        <div class="hero-links">
+          <a class="hero-link hero-link-primary" href="#descargas">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+            <span>Descargar TuxMusic</span>
+          </a>
+          <a class="hero-link" href="#instalar">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></svg>
+            <span>Cómo instalar</span>
+          </a>
+        </div>
+        <p class="hero-note"><span class="dot-live" aria-hidden="true"></span><strong>v1.6.3</strong> · Android 8.0+ · iOS 17+ · Descarga gratuita</p>
+      </div>
+      <div class="hero-right" aria-hidden="true">
+        <div class="app-showcase">
+          <span class="showcase-glow"></span>
+          <span class="showcase-ring ring-1"></span>
+          <span class="showcase-ring ring-2"></span>
+          <img class="showcase-icon" src="assets/apps/tuxmusic-icon.png" alt="" width="512" height="512">
+          <span class="platform-badge badge-android">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 9.48l1.84-3.18a.4.4 0 0 0-.15-.55.4.4 0 0 0-.54.15l-1.87 3.22A11.4 11.4 0 0 0 12 8.1c-1.74 0-3.39.38-4.88 1.02L5.25 5.9a.4.4 0 0 0-.55-.15.4.4 0 0 0-.15.55L6.4 9.48A10.2 10.2 0 0 0 1.5 18h21a10.2 10.2 0 0 0-4.9-8.52ZM7 15.25a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm10 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>
+            Android
+          </span>
+          <span class="platform-badge badge-ios">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.36 12.76c-.02-2.4 1.96-3.56 2.05-3.62-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.75 0-1.91-.85-3.14-.83-1.62.02-3.11.94-3.94 2.39-1.68 2.91-.43 7.22 1.21 9.58.8 1.16 1.75 2.46 3 2.41 1.21-.05 1.66-.78 3.12-.78 1.45 0 1.86.78 3.13.76 1.29-.02 2.11-1.18 2.9-2.34.91-1.33 1.28-2.62 1.3-2.69-.03-.01-2.49-.96-2.51-3.86ZM13.94 5.47c.66-.8 1.11-1.91.99-3.02-.96.04-2.12.64-2.8 1.44-.61.71-1.15 1.85-1.01 2.93 1.07.08 2.16-.54 2.82-1.35Z"/></svg>
+            iOS
+          </span>
+          <span class="eq"><i></i><i></i><i></i><i></i><i></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="stats apps-stats">
+      <div class="stat"><span class="stat-num">2</span><span class="stat-label">Plataformas</span></div>
+      <div class="stat"><span class="stat-num">1.6.3</span><span class="stat-label">Versión actual</span></div>
+      <div class="stat"><span class="stat-num">6</span><span class="stat-label">Idiomas</span></div>
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Gratis</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="descargas">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2>Descarga TuxMusic</h2>
+      <div class="section-lines center" aria-hidden="true"><i style="width:64px;background:#18f572"></i><i style="width:46px;background:#14dd67"></i><i style="width:38px;background:#10c75b"></i><i style="width:30px;background:#0db150"></i><i style="width:24px;background:#0a9b4a"></i><i style="width:18px;background:#088541"></i><i style="width:12px;background:#066f37"></i></div>
+      <p>Elige tu plataforma. Sin tiendas, sin cuentas y sin suscripciones: descarga directa desde dStudios.</p>
+    </div>
+
+    <div class="dl-grid">
+      <article class="dl-card android" id="android">
+        <div class="dl-card-top">
+          <img class="dl-icon" src="assets/apps/tuxmusic-icon.png" alt="Icono de TuxMusic" width="62" height="62">
+          <div class="dl-heading">
+            <h3>Android</h3>
+            <p>APK directo · Android 8.0 o posterior</p>
+          </div>
+          <span class="dl-badge">Recomendado</span>
+        </div>
+        <div class="dl-body">
+          <p>Instala TuxMusic en tu teléfono o tablet. La biblioteca, las playlists y las descargas se guardan en tu dispositivo.</p>
+          <div class="dl-meta">
+            <span class="chip chip-ver">v1.6.3</span>
+            <span class="chip">21 MB</span>
+            <span class="chip">API 26+</span>
+            <span class="chip">arm64 / armv7</span>
+          </div>
+          <div class="dl-actions">
+            <a class="btn-dl btn-android" href="downloads/TuxMusic-Android-1.6.3.apk" download="TuxMusic-Android-1.6.3.apk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+              Descargar APK
+            </a>
+          </div>
+          <p class="dl-hint">Si Android muestra un aviso, elige <strong>Instalar de todas formas</strong>. Es normal al instalar un APK fuera de Google Play.</p>
+          <details class="hash-box">
+            <summary>Verificar descarga (SHA-256)</summary>
+            <code>daf89e675fd751aca85b659047a37e90abc1f91063defcd97a9850bcbbeb4676</code>
+          </details>
+        </div>
+      </article>
+
+      <article class="dl-card ios" id="ios">
+        <div class="dl-card-top">
+          <img class="dl-icon" src="assets/apps/tuxmusic-icon.png" alt="Icono de TuxMusic" width="62" height="62">
+          <div class="dl-heading">
+            <h3>iPhone / iPad</h3>
+            <p>IPA sin firmar · iOS 17 o posterior</p>
+          </div>
+          <span class="dl-badge">Sin firmar</span>
+        </div>
+        <div class="dl-body">
+          <p>El IPA está compilado para iPhone y iPad reales (arm64). iOS no lo instala directamente: hay que firmarlo con tu Apple ID usando Sideloadly o AltStore.</p>
+          <div class="dl-meta">
+            <span class="chip chip-ver">v1.6.3</span>
+            <span class="chip">1.8 MB</span>
+            <span class="chip">iOS 17+</span>
+            <span class="chip">arm64</span>
+          </div>
+          <div class="dl-actions">
+            <a class="btn-dl btn-ios" href="downloads/TuxMusic-iOS-1.6.3-unsigned.ipa" download="TuxMusic-iOS-1.6.3-unsigned.ipa">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+              Descargar IPA
+            </a>
+            <a class="btn-dl btn-ios-outline" href="#instalar">Cómo instalar</a>
+          </div>
+          <p class="dl-warning">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+            <span>Descárgalo en un ordenador. Con un Apple ID gratuito la firma caduca a los 7 días; después hay que volver a instalarlo.</span>
+          </p>
+          <details class="hash-box">
+            <summary>Verificar descarga (SHA-256)</summary>
+            <code>d7c8b1c4bb63fe256b25e4c47f0170ff71c05513133d0a53a62f717af1ecee61</code>
+          </details>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="funciones">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2>Todo lo que necesitas para escuchar</h2>
+      <div class="section-lines center" aria-hidden="true"><i style="width:64px;background:#18f572"></i><i style="width:46px;background:#14dd67"></i><i style="width:38px;background:#10c75b"></i><i style="width:30px;background:#0db150"></i><i style="width:24px;background:#0a9b4a"></i><i style="width:18px;background:#088541"></i><i style="width:12px;background:#066f37"></i></div>
+      <p>Catálogos, playlists y descargas en una interfaz nativa, sin anuncios ni cuentas.</p>
+    </div>
+    <div class="feature-grid">
+      <article class="feature">
+        <span class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+        <h3>Apple Music y Spotify</h3>
+        <p>Busca canciones en los dos catálogos y elige la fuente que prefieras para cada tema.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+        <h3>Playlists de Spotify</h3>
+        <p>Pega el enlace de una playlist pública y TuxMusic importa sus canciones a tu biblioteca.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v10m0 0 3.5-3.5M12 13 8.5 9.5"/><path d="M5 15v3a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-3"/></svg></span>
+        <h3>Descargas sin conexión</h3>
+        <p>Guarda tus canciones y escúchalas cuando no tengas datos o estés en modo avión.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></span>
+        <h3>Reproducción en segundo plano</h3>
+        <p>Sigue escuchando con la pantalla apagada y controla la música desde la pantalla de bloqueo.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>
+        <h3>Tu biblioteca</h3>
+        <p>Playlists, favoritos, historial y descargas guardados en el dispositivo, sin cuentas en la nube.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg></span>
+        <h3>Seis idiomas</h3>
+        <p>Español, English, Français, Русский, 日本語 y 简体中文, con cambio inmediato desde Ajustes.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="instalar">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2>Instalación paso a paso</h2>
+      <div class="section-lines center" aria-hidden="true"><i style="width:64px;background:#18f572"></i><i style="width:46px;background:#14dd67"></i><i style="width:38px;background:#10c75b"></i><i style="width:30px;background:#0db150"></i><i style="width:24px;background:#0a9b4a"></i><i style="width:18px;background:#088541"></i><i style="width:12px;background:#066f37"></i></div>
+      <p>Android se instala en un minuto. En iOS hace falta un ordenador y firmar la app con tu Apple ID.</p>
+    </div>
+    <div class="install-grid">
+      <article class="install-card">
+        <h3><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.4.4 0 0 0-.15-.55.4.4 0 0 0-.54.15l-1.87 3.22A11.4 11.4 0 0 0 12 8.1c-1.74 0-3.39.38-4.88 1.02L5.25 5.9a.4.4 0 0 0-.55-.15.4.4 0 0 0-.15.55L6.4 9.48A10.2 10.2 0 0 0 1.5 18h21a10.2 10.2 0 0 0-4.9-8.52ZM7 15.25a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm10 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg> Android</h3>
+        <p class="install-intro">APK · 21 MB · Android 8.0 o posterior</p>
+        <ol class="steps">
+          <li><strong>Descarga el APK</strong> desde el botón de arriba y espera a que termine la descarga.</li>
+          <li>Abre el archivo. Si Android bloquea la instalación, entra en <strong>Ajustes → Seguridad</strong> y permite instalar apps desconocidas para tu navegador o gestor de archivos.</li>
+          <li>Pulsa <strong>Instalar</strong> y abre TuxMusic. Si ya tenías otra versión con una firma distinta, desinstálala primero.</li>
+        </ol>
+        <div class="warning">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5m0 3h.01"/></svg>
+          <span>El APK se distribuye directamente desde dStudios, no desde Google Play. Es normal que Play Protect muestre un aviso la primera vez.</span>
+        </div>
+      </article>
+
+      <article class="install-card">
+        <h3><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.36 12.76c-.02-2.4 1.96-3.56 2.05-3.62-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.75 0-1.91-.85-3.14-.83-1.62.02-3.11.94-3.94 2.39-1.68 2.91-.43 7.22 1.21 9.58.8 1.16 1.75 2.46 3 2.41 1.21-.05 1.66-.78 3.12-.78 1.45 0 1.86.78 3.13.76 1.29-.02 2.11-1.18 2.9-2.34.91-1.33 1.28-2.62 1.3-2.69-.03-.01-2.49-.96-2.51-3.86ZM13.94 5.47c.66-.8 1.11-1.91.99-3.02-.96.04-2.12.64-2.8 1.44-.61.71-1.15 1.85-1.01 2.93 1.07.08 2.16-.54 2.82-1.35Z"/></svg> iPhone / iPad</h3>
+        <p class="install-intro">IPA sin firmar · 1.8 MB · iOS 17 o posterior</p>
+        <ol class="steps">
+          <li><strong>Descarga el IPA en un ordenador</strong> (Windows o Mac). No lo abras desde Safari en el iPhone.</li>
+          <li>Instala <a href="https://sideloadly.io/" target="_blank" rel="noopener">Sideloadly</a> o <a href="https://altstore.io/" target="_blank" rel="noopener">AltStore</a> en el ordenador.</li>
+          <li>Conecta el iPhone, confía en el equipo y arrastra el IPA a la herramienta.</li>
+          <li>Introduce tu <strong>Apple ID</strong> y firma. Después activa <strong>Ajustes → Privacidad y seguridad → Modo de desarrollador</strong> y confía en el desarrollador en <strong>VPN y gestión de dispositivos</strong>.</li>
+          <li>Con una cuenta gratuita la app funciona <strong>7 días</strong>; vuelve a firmarla para renovarla. Con una cuenta Apple Developer de pago puedes usar TestFlight o Ad Hoc.</li>
+        </ol>
+        <div class="warning">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+          <span>El IPA no está firmado por Apple. No se puede instalar abriéndolo desde el iPhone: necesita Sideloadly, AltStore o Xcode con un Mac y una cuenta Apple.</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band">
+      <div class="cta-copy">
+        <p class="cta-kicker">También para tu servidor</p>
+        <h2>¿Buscas plugins para Minecraft?</h2>
+        <p>Tenemos una colección de plugins para Paper, Spigot, BungeeCord y Velocity con documentación, comandos, permisos y configuración.</p>
+      </div>
+      <a class="btn-cta" href="https://danshi17.github.io/">
+        Ver página de plugins
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img class="logo-img small" src="assets/logo.png" alt="" width="32" height="32">
+      <div>
+        <strong>dStudios Apps</strong>
+        <p>Aplicaciones oficiales de dStudios. Descargas directas, sin tiendas ni intermediarios.</p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-apps-links">
+        <a href="#descargas">Descargas</a>
+        <a href="#instalar">Instalar</a>
+        <a href="https://danshi17.github.io/">Plugins</a>
+        <a href="https://github.com/Danshi17" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p>© 2026 dStudios. Todos los derechos reservados. <span class="dot">·</span> Powered by GitHub Pages</p>
+    </div>
+  </div>
+</footer>
+<button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
