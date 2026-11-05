@@ -3,3 +3,5 @@
 downloads/*.apk
 downloads/*.ipa
 downloads/*.zip
+downloads/*.deb
+downloads/*.exe

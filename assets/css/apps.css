@@ -11,6 +11,8 @@
   --tm-glow: rgba(24, 245, 114, .26);
   --android: #3ddc84;
   --ios: #0a84ff;
+  --linux: #e95420;
+  --windows: #0078d4;
 }
 
 [data-theme="dark"] {
@@ -217,15 +219,29 @@
 }
 
 .badge-android {
-  top: 8%;
-  left: -2%;
+  top: 4%;
+  left: -3%;
   color: color-mix(in srgb, var(--android) 55%, var(--ink));
   animation: tm-float 6.4s ease-in-out infinite;
 }
 
+.badge-linux {
+  top: 22%;
+  right: -3%;
+  color: color-mix(in srgb, var(--linux) 72%, var(--ink));
+  animation: tm-float 7.8s ease-in-out infinite reverse;
+}
+
+.badge-windows {
+  left: -3%;
+  bottom: 24%;
+  color: color-mix(in srgb, var(--windows) 78%, var(--ink));
+  animation: tm-float 7.1s ease-in-out infinite;
+}
+
 .badge-ios {
-  right: -2%;
-  bottom: 12%;
+  right: -3%;
+  bottom: 4%;
   animation: tm-float 7.6s ease-in-out infinite reverse;
 }
 
@@ -334,6 +350,18 @@
     var(--panel);
 }
 
+.dl-card.linux .dl-card-top {
+  background:
+    radial-gradient(420px 160px at 100% 0%, rgba(233, 84, 32, .20), transparent 70%),
+    var(--panel);
+}
+
+.dl-card.windows .dl-card-top {
+  background:
+    radial-gradient(420px 160px at 100% 0%, rgba(0, 120, 212, .20), transparent 70%),
+    var(--panel);
+}
+
 .dl-icon {
   width: 62px;
   height: 62px;
@@ -383,8 +411,28 @@
   border: 1px solid color-mix(in srgb, var(--blue) 30%, var(--line));
 }
 
+.dl-card.linux .dl-badge {
+  color: #a63c11;
+  background: rgba(233, 84, 32, .12);
+  border: 1px solid rgba(233, 84, 32, .34);
+}
+
+.dl-card.windows .dl-badge {
+  color: #0b5aa0;
+  background: rgba(0, 120, 212, .10);
+  border: 1px solid rgba(0, 120, 212, .30);
+}
+
 [data-theme="dark"] .dl-card.android .dl-badge {
   color: #7df0b0;
+}
+
+[data-theme="dark"] .dl-card.linux .dl-badge {
+  color: #ff9b6a;
+}
+
+[data-theme="dark"] .dl-card.windows .dl-badge {
+  color: #6ab7ff;
 }
 
 .dl-body {
@@ -478,6 +526,61 @@
   color: var(--blue-text);
   background: var(--panel);
   border-color: var(--blue-light);
+}
+
+.btn-linux {
+  background: var(--linux);
+  box-shadow: 0 8px 18px rgba(233, 84, 32, .28);
+}
+
+.btn-linux:hover {
+  background: #c94a1c;
+}
+
+.btn-windows {
+  background: var(--windows);
+  box-shadow: 0 8px 18px rgba(0, 120, 212, .28);
+}
+
+.btn-windows:hover {
+  background: #0067b8;
+}
+
+.btn-linux-outline,
+.btn-windows-outline {
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-linux-outline:hover {
+  color: #a63c11;
+  background: var(--panel);
+  border-color: var(--linux);
+}
+
+.btn-windows-outline:hover {
+  color: #0b5aa0;
+  background: var(--panel);
+  border-color: var(--windows);
+}
+
+[data-theme="dark"] .btn-linux-outline:hover {
+  color: #ff9b6a;
+}
+
+[data-theme="dark"] .btn-windows-outline:hover {
+  color: #6ab7ff;
+}
+
+.dl-hint code,
+.warning code {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background: color-mix(in srgb, var(--ink) 7%, transparent);
+  color: var(--ink);
+  font-size: .94em;
 }
 
 .dl-hint {
@@ -637,6 +740,38 @@
   color: var(--blue-text);
 }
 
+.install-card.install-android h3 svg {
+  color: #16a34a;
+}
+
+.install-card.install-ios h3 svg {
+  color: var(--ios);
+}
+
+.install-card.install-linux h3 svg {
+  color: var(--linux);
+}
+
+.install-card.install-windows h3 svg {
+  color: var(--windows);
+}
+
+[data-theme="dark"] .install-card.install-android h3 svg {
+  color: #4ade80;
+}
+
+[data-theme="dark"] .install-card.install-ios h3 svg {
+  color: #6ab7ff;
+}
+
+[data-theme="dark"] .install-card.install-linux h3 svg {
+  color: #ff8a5c;
+}
+
+[data-theme="dark"] .install-card.install-windows h3 svg {
+  color: #63b3ff;
+}
+
 .install-intro {
   margin: 0 0 16px;
   color: var(--muted-2);
@@ -681,6 +816,16 @@
 
 .steps li strong {
   color: var(--ink);
+}
+
+.steps code {
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: .8em;
+  overflow-wrap: anywhere;
 }
 
 .install-card .warning {
